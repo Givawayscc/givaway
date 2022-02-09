@@ -1,0 +1,96 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    font-family: Montserrat;
+    text-align: center;
+    color: #ffffff;
+}
+
+form
+{
+    margin-top: 50px;
+    transition: all 2s ease-in-out;
+}
+
+.form-control
+{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid pink;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+input
+{
+    height: 45px;
+    letter-spacing: 2px;
+}
+
+input.form-control.submit
+{
+    background: pink;
+    border-color: transparent;
+    color: #ffffff;
+    height: 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+
+.contact-form
+{
+    position: absolute;
+    top: 45%; /*"Centered"*/
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+button {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
